@@ -17,8 +17,8 @@ Kurang fitur profile user dan UI yang friendly pada admin
 - import db_dokar.sql kedalam mysql database
 ### Test Aplikasi
 - Admin
-  Email : admin@gmail.com
-  Pw : 12345678
+ Email : admin@gmail.com
+ Pw : 12345678
 - User
-  Email : user@gmail.com
-  Pw : 12345678
+ Email : user@gmail.com
+ Pw : 12345678
