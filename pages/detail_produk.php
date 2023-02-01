@@ -44,31 +44,26 @@ if (isset($_GET['id'])) {
                     $fileName = rtrim($fileName, '|');
                     $fileName = explode("|", $fileName);
                     ?>
-
-                    <?php if (count($fileName) <= 1) : ?>
-                        <img src="admin/controller/images/<?= $id ?>/<?= $fileName[0] ?>" alt="..." style="width:350px; height: 350px; object-fit: cover;">
-                    <?php elseif (count($fileName) >= 1) : ?>
-                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="height: 350px; width: 350px;">
-                            <?php foreach ($fileName as $file) : ?>
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img src="admin/controller/images/<?= $id ?>/<?= $file ?>" class="d-block w-100" alt="...">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="admin/controller/images/<?= $id ?>/<?= $file ?>" class="d-block w-100" alt="...">
-                                    </div>
+                    <div id="carouselExampleControls" class="carousel slide overflow-hidden" data-bs-ride="carousel" style="height: 350px; width: 350px;">
+                        <?php foreach ($fileName as $file) : ?>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="admin/controller/images/<?= $id ?>/<?= $file ?>" class="d-block w-100" alt="...">
                                 </div>
-                            <?php endforeach ?>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                    <?php endif ?>
+                                <div class="carousel-item">
+                                    <img src="admin/controller/images/<?= $id ?>/<?= $file ?>" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                        <?php endforeach ?>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
                 </div>
                 <div class="col">
                     <h3><?= $data['nama_produk'] ?></h3>

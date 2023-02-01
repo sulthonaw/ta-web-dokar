@@ -43,7 +43,7 @@ foreach ($fileName as $name) {
         <div class="bg-putih bg-shadow-2 container-fluid border m-auto p-4 row">
             <div class="col-md-auto p-0">
                 <!-- carousel width kotak -->
-                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="height: 350px; width: 350px;">
+                <div id="carouselExampleControls" class="carousel slide overflow-hidden" data-bs-ride="carousel" style="height: 350px; width: 350px;">
                     <div class="carousel-inner">
                         <?php foreach ($files as $file) : ?>
                             <div class="carousel-item active">

@@ -9,12 +9,12 @@ if (isset($_GET['find'])) {
 }
 ?>
 
-<div class="container mt-4 py-2">
+<div class="container mt-4 pt-2" style="min-height: 80vh;">
     <div class="container overflow-visible">
         <h5>Pencarian terkait : </h5>
         <p style=""><i class="text-primary"><?= $_GET['find'] ?></i></p>
     </div>
-    <div class="container" style="width: max-content;">
+    <div class="container row" style="width: max-content;">
         <?php if (mysqli_num_rows($hasil) > 0) : ?>
             <?php
             foreach ($hasil as $data) {

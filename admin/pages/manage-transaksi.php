@@ -23,6 +23,7 @@ $hasil = mysqli_query($koneksi, $query);
             <th>
                 Username
             </th>
+            <th>Aksi</th>
         </tr>
         <?php
         $i = 1;
@@ -52,6 +53,9 @@ $hasil = mysqli_query($koneksi, $query);
                         }
                     }
                     ?>
+                </td>
+                <td>
+                    <button class="btn btn-primary">Detail</button>
                 </td>
             </tr>
         <?php endwhile ?>

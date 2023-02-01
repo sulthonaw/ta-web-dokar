@@ -62,6 +62,60 @@ $fileGambar = explode("|", $fileGambar);
         </div>
     </div>
 
+    <!-- data pemesan -->
+    <div class="container mt-4 py-3 border b-shadow w-95">
+        <div class="container mt-2 py-3">
+            <h5>Data Pembayaran</h5>
+            <hr>
+            <div class="container">
+                <table class="w-100">
+                    <tr>
+                        <td>
+                            Nama
+                        </td>
+                        <td>
+                            :
+                        </td>
+                        <td>
+                            <div class="input-group input-group-sm mb-3">
+                                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Alamat
+                        </td>
+                        <td>
+                            :
+                        </td>
+                        <td>
+                            <div class="input-group input-group-sm mb-3">
+                                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Metode Pembayaran
+                        </td>
+                        <td>
+                            :
+                        </td>
+                        <td>
+                            <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                <option selected value="Dokar Pay">Dokar Pay</option>
+                                <option value="BRI">BRI</option>
+                                <option value="BCA">BCA</option>
+                                <option value="OVO">OVO</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
     <!-- Pembayaran -->
     <div class="container mt-4 py-3 border b-shadow w-95">
         <div class="container mt-2 py-3">

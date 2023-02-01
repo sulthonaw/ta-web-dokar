@@ -14,7 +14,7 @@
 
 <body>
     <div class="container mt-4">
-        <div class="container p-3 row" style="overflow: hidden;">
+        <div class="container p-3 row" style="overflow: hidden; min-height: 80vh;">
             <div class="col">
                 <div class="container h-100 d-flex align-items-center justify-content-center">
                     <div class="container">
@@ -63,7 +63,7 @@
 
                             <!-- button, name: masuk -->
                             <div class="container m-auto" style="width: 50%;">
-                                <button type="submit" name="masuk" class="btn btn-primary" style="width: 100%;">Login</button>
+                                <button type="submit" name="masuk" class="btn btn-primary" style="width: 100%;">Masuk</button>
                                 <p class="text-secondary text-center mt-2" style="font-size: 13px;">Belum punya akun? <a href="?page=daftar"><b class="text-primary">Daftar</b></a></p>
                             </div>
                         </form>
